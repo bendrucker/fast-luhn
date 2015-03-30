@@ -2,6 +2,7 @@
 
 module.exports = (function (array) {
   return function luhn (number) {
+    if (!number) return false;
     var length = number.length;
     var bit = 1;
     var sum = 0;
