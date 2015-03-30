@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- iojs
+deploy:
+  provider: npm
+  email: bvdrucker@gmail.com
+  api_key:
+    secure: hGv0r7KLzXFxnmXHGzXe7sago3otfnL/IjTwj50d9ibGrSBo5X+4LtvLaqdxSaMgInvmdjK5yIh8RBovIZ92xtvhnfEXGNkZJOX9PaRrNnNgUPny0s5rBd86Qjwj+iC8gquV2fFAfUA3y7y+TxLpjvnyjmn1fs6uoVeIb889ioE=
+  on:
+    tags: true
+    repo: bendrucker/fast-luhn
