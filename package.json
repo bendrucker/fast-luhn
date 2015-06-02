@@ -2,9 +2,9 @@
   "name": "fast-luhn",
   "version": "1.0.1",
   "description": "A fast Luhn algorithm for validating credit cards",
-  "main": "./src",
+  "main": "index.js",
   "scripts": {
-    "test": "babel-tape-runner test/*.js"
+    "test": "standard && tape test.js"
   },
   "repository": {
     "type": "git",
@@ -18,13 +18,13 @@
     "checksum"
   ],
   "author": "Ben Drucker <bvdrucker@gmail.com> (http://www.bendrucker.me/)",
-  "license": "WTFPL",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bendrucker/fast-luhn/issues"
   },
   "homepage": "https://github.com/bendrucker/fast-luhn",
   "devDependencies": {
-    "babel-tape-runner": "~1.0.0",
-    "tape": "~3.5.0"
+    "tape": "^4.0.0",
+    "standard": "^4.0.0"
   }
 }

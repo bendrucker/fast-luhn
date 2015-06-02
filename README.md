@@ -1,6 +1,6 @@
 # fast-luhn [![Build Status](https://travis-ci.org/bendrucker/fast-luhn.svg?branch=master)](https://travis-ci.org/bendrucker/fast-luhn)
 
-A fast Luhn algorithm for validating credit cards. Adapted from [ShirtlessKirk's popular gist](https://gist.github.com/ShirtlessKirk/2134376). 
+> A fast [Luhn](http://en.wikipedia.org/wiki/Luhn_algorithm) algorithm for validating credit cards. Adapted from [ShirtlessKirk's popular gist](https://gist.github.com/ShirtlessKirk/2134376). 
 
 ## Installing
 
@@ -10,10 +10,17 @@ $ npm install fast-luhn
 
 ## API
 
-##### `luhn(number)` -> `Boolean`
+#### `luhn(number)` -> `Boolean`
 
-Accepts a `number` (String) and returns `true`/`false` depending on whether the Luhn checksum is valid.
+Returns `true`/`false` depending on whether the Luhn checksum is valid
+
+##### number
+
+*Required*  
+Type: `string`
+
+A credit card number.
 
 ## License
 
-[WTFPL](http://www.wtfpl.net/)
+MIT © [Ben Drucker](http://bendrucker.me)
