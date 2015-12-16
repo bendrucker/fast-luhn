@@ -4,7 +4,11 @@
   "description": "A fast Luhn algorithm for validating credit cards",
   "main": "index.js",
   "scripts": {
-    "test": "standard && tape test.js"
+    "test": "standard && tape test.js",
+    "dist": "browserify index.js --s fastLuhn -o dist/bundle.js",
+    "dist:min": "browserify index.js --s fastLuhn | uglifyjs > dist/bundle.min.js",
+    "postdist": "npm run dist:min",
+    "postinstall": "npm run dist"
   },
   "repository": {
     "type": "git",
@@ -30,5 +34,9 @@
   "files": [
     "index.js",
     "readme.md"
-  ]
+  ],
+  "dependencies": {
+    "browserify": "^12.0.1",
+    "uglify-js": "^2.6.1"
+  }
 }
