@@ -10,8 +10,11 @@ test(function (t) {
   t.end()
 })
 
-test(function(t){
-  t.ok( luhn( luhn.create('123456') ), 'passing')
-  t.ok( luhn( luhn.create('7654321') ), 'passing')
+test('calculate new luhn', function(t){
+  t.ok( luhn( luhn.calculate('123456') ), 'passing')
+  t.ok( luhn( luhn.calculate('7654321') ), 'passing')
+  t.ok( luhn( luhn.calculate('1') ), 'passing')
+  t.notOk( luhn( luhn.calculate('') ), 'empty')
+
   t.end()
 })
