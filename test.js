@@ -9,3 +9,9 @@ test(function (t) {
   t.equal(luhn(''), false, 'falsy')
   t.end()
 })
+
+test(function(t){
+  t.ok( luhn( luhn.create('123456') ), 'passing')
+  t.ok( luhn( luhn.create('7654321') ), 'passing')
+  t.end()
+})
