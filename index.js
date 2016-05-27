@@ -2,6 +2,7 @@
 
 module.exports = (function (array) {
   return function luhn (number) {
+    if (typeof number !== 'string') throw new TypeError('Expected string input')
     if (!number) return false
     var length = number.length
     var bit = 1
