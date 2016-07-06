@@ -9,5 +9,6 @@ test(function (t) {
   t.equal(luhn(''), false, 'falsy')
   t.equal(luhn(undefined), false, 'falsy')
   t.equal(luhn(null), false, 'falsy')
+  t.throws(function () { luhn(12345) }, /TypeError/, 'invalid type')
   t.end()
 })
