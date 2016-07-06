@@ -2,8 +2,8 @@
 
 module.exports = (function (array) {
   return function luhn (number) {
-    if (typeof number !== 'string') throw new TypeError('Expected string input')
     if (!number) return false
+    if (typeof number !== 'string') throw new TypeError('Expected string input')
     var length = number.length
     var bit = 1
     var sum = 0
