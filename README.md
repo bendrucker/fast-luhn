@@ -8,6 +8,26 @@
 $ npm install fast-luhn
 ```
 
+## Browser
+
+### Browserify
+
+```js
+const luhn = require('dist/bundle');
+
+luhn(<number>)
+```
+
+### Script/concat
+
+```html
+<script src="dist/bundle.min.js"></script>
+```
+
+```js
+window.fastLuhn(<number>);
+```
+
 ## API
 
 #### `luhn(number)` -> `Boolean`
