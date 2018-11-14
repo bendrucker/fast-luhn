@@ -11,7 +11,8 @@ module.exports = (function (array) {
 
     while (length) {
       value = parseInt(number.charAt(--length), 10)
-      sum += (bit ^= 1) ? array[value] : value
+      bit ^= 1
+      sum += bit ? array[value] : value
     }
 
     return !!sum && sum % 10 === 0
