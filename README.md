@@ -1,4 +1,4 @@
-# fast-luhn [![Build Status](https://travis-ci.org/bendrucker/fast-luhn.svg?branch=master)](https://travis-ci.org/bendrucker/fast-luhn)
+# fast-luhn [![Build Status](https://travis-ci.org/bendrucker/fast-luhn.svg?branch=master)](https://travis-ci.org/bendrucker/fast-luhn) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/fast-luhn.svg)](https://greenkeeper.io/)
 
 > A fast [Luhn](http://en.wikipedia.org/wiki/Luhn_algorithm) algorithm for validating credit cards. Adapted from [ShirtlessKirk's popular gist](https://gist.github.com/ShirtlessKirk/2134376). 
 
