@@ -28,7 +28,7 @@
     "standard": "^14.0.0"
   },
   "files": [
-    "index.js",
-    "readme.md"
+    "*.js",
+    "*.ts"
   ]
 }
