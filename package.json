@@ -25,7 +25,7 @@
   "homepage": "https://github.com/bendrucker/fast-luhn",
   "devDependencies": {
     "tape": "^5.0.0",
-    "standard": "^14.0.0"
+    "standard": "^15.0.0"
   },
   "files": [
     "*.js",
