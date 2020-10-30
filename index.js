@@ -4,10 +4,10 @@ module.exports = (function (array) {
   return function luhn (number) {
     if (typeof number !== 'string') throw new TypeError('Expected string input')
     if (!number) return false
-    var length = number.length
-    var bit = 1
-    var sum = 0
-    var value
+    let length = number.length
+    let bit = 1
+    let sum = 0
+    let value
 
     while (length) {
       value = parseInt(number.charAt(--length), 10)

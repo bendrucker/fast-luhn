@@ -1,7 +1,7 @@
 'use strict'
 
-var test = require('tape')
-var luhn = require('./')
+const test = require('tape')
+const luhn = require('./')
 
 test(function (t) {
   t.ok(luhn('4242424242424242'), 'passing')
