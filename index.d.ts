@@ -1,2 +1,1 @@
-declare const luhn: (pan: string) => boolean;
-export default luhn;
+export default function luhn (pan: string): boolean;

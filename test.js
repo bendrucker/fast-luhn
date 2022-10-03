@@ -1,7 +1,5 @@
-'use strict'
-
-const test = require('tape')
-const luhn = require('./')
+import test from 'tape'
+import luhn from './index.js'
 
 test(function (t) {
   t.ok(luhn('4242424242424242'), 'passing')

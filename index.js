@@ -1,20 +1,18 @@
-'use strict'
+const array = [0, 2, 4, 6, 8, 1, 3, 5, 7, 9]
 
-module.exports = (function (array) {
-  return function luhn (number) {
-    if (typeof number !== 'string') throw new TypeError('Expected string input')
-    if (!number) return false
-    let length = number.length
-    let bit = 1
-    let sum = 0
-    let value
+export default function luhn (number) {
+  if (typeof number !== 'string') throw new TypeError('Expected string input')
+  if (!number) return false
+  let length = number.length
+  let bit = 1
+  let sum = 0
+  let value
 
-    while (length) {
-      value = parseInt(number.charAt(--length), 10)
-      bit ^= 1
-      sum += bit ? array[value] : value
-    }
-
-    return sum % 10 === 0
+  while (length) {
+    value = parseInt(number.charAt(--length), 10)
+    bit ^= 1
+    sum += bit ? array[value] : value
   }
-}([0, 2, 4, 6, 8, 1, 3, 5, 7, 9]))
+
+  return sum % 10 === 0
+}

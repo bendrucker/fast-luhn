@@ -2,7 +2,8 @@
   "name": "fast-luhn",
   "version": "2.0.0",
   "description": "A fast Luhn algorithm for validating credit cards",
-  "main": "index.js",
+  "type": "module",
+  "exports": "./index.js",
   "scripts": {
     "test": "standard && tape test.js"
   },
@@ -33,6 +34,6 @@
     "*.ts"
   ],
   "engines": {
-    "node": ">=8"
+    "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
   }
 }
