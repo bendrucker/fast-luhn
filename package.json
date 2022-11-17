@@ -1,6 +1,6 @@
 {
   "name": "fast-luhn",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A fast Luhn algorithm for validating credit cards",
   "main": "index.js",
   "scripts": {
