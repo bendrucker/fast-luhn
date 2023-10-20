@@ -1,20 +1,22 @@
 'use strict'
 
-module.exports = (function (array) {
-  return function luhn (number) {
-    if (typeof number !== 'string') throw new TypeError('Expected string input')
-    if (!number) return false
-    let length = number.length
-    let bit = 1
-    let sum = 0
-    let value
+const lookup = [0, 2, 4, 6, 8, 1, 3, 5, 7, 9]
 
-    while (length) {
-      value = parseInt(number.charAt(--length), 10)
-      bit ^= 1
-      sum += bit ? array[value] : value
-    }
+module.exports = function luhn (number) {
+  if (typeof number !== 'string') throw new TypeError('Expected string input')
+  if (!number) return false
 
-    return sum % 10 === 0
+  let index = number.length
+  let x2 = true
+  let sum = 0
+
+  while (index) {
+    const value = number.charCodeAt(--index) - 48
+    if (value < 0 || value > 9) return false
+
+    x2 = !x2
+    sum += x2 ? lookup[value] : value
   }
-}([0, 2, 4, 6, 8, 1, 3, 5, 7, 9]))
+
+  return sum % 10 === 0
+}
